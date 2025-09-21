@@ -7,8 +7,4 @@ compiler.runtime=static
 build_type=Release
 
 [conf]
-tools.build:cxxflags=[]
-tools.build:linker_executables=[]
-
-[options]
-*:shared=False
+tools.cmake.cmaketoolchain:generator=Ninja

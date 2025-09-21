@@ -23,7 +23,7 @@ Bu doküman, Windows üzerinde Docker kullanarak **JFrog Artifactory Community E
 İnternete açık bir makinede:
 
 ```bash
-docker pull releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker pull releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
 ```
 
 Bu komut Artifactory OSS (Community Edition) imajının en güncel sürümünü indirir.
@@ -35,7 +35,7 @@ Bu komut Artifactory OSS (Community Edition) imajının en güncel sürümünü 
 Online ortamda image’i `.tar` dosyasına kaydedin:
 
 ```bash
-docker save releases-docker.jfrog.io/jfrog/artifactory-oss:latest -o artifactory-oss-latest.tar
+docker save releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest -o artifactory-cpp-ce-latest.tar
 ```
 
 Bu dosyayı USB veya ağ üzerinden offline ortama aktarın.
@@ -43,7 +43,7 @@ Bu dosyayı USB veya ağ üzerinden offline ortama aktarın.
 Offline ortamda image’i içeri yükleyin:
 
 ```bash
-docker load -i artifactory-oss-latest.tar
+docker load -i artifactory-cpp-ce-latest.tar
 ```
 
 Kontrol etmek için:
@@ -61,7 +61,7 @@ Artifactory imajının listelendiğini görmelisiniz.
 Offline ortamda container başlatın:
 
 ```bash
-docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker run --name artifactory -d -e JF_SHARED_DATABASE_TYPE=derby -v F:/artifactory-data:/var/opt/jfrog/artifactory -e JF_SHARED_DATABASE_ALLOWNONPOSTGRESQL=true -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-cpp-ce:latest
 ```
 
 - `--name artifactory`: Container adı

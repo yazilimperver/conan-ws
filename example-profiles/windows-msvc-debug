@@ -3,12 +3,8 @@ os=Windows
 arch=x86_64
 compiler=msvc
 compiler.version=193
-compiler.runtime=static_debug
+compiler.runtime=static
 build_type=Debug
 
 [conf]
-tools.build:cxxflags=[]
-tools.build:linker_executables=[]
-
-[options]
-*:shared=False
+tools.cmake.cmaketoolchain:generator=Ninja
