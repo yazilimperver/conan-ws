@@ -1,11 +1,21 @@
 # Kapsam
 Bu doküman içerisinde Conan'a yönelik faydalı olan içerikler bir araya getirilecektir. Özellikle, yardımcı resim ve gösterimler. Çizimler ve sunumlara burada yer veriyor olacağım.
 
+## Yapılacaklar
+- [ ] Kuruluma yönelik adımların eklenmesi
+- [ ] Essential eğitim notlarının elden geçirilmesi
+- [ ] Docker için gerekli kurulum adımları ve hazırlıkların yapılması
+
 ## Eğitimler
 
 Resmi eğitim içeriği için [Conan 2 Essentials](https://academy.jfrog.com/conan-2-essentials?utm_source=Conan+Docs)'a göz atabilirsiniz.
 
 Artifactory Management eğitim içeriği için [Artifact Management With JFrog Artifactory](https://www.youtube.com/watch?v=bKp1Vif9oO4)'a göz atabilirsiniz.
+
+## Conan'a Yönelik Faydalı Repolar
+- [Conan 2.0 Örnekleri](https://github.com/conan-io/examples2)'a göz atabilirsiniz.
+- [Conan 2.0 Essential Eğitim Reposu](https://github.com/conan-io/conan-training2)'a göz atabilirsiniz.
+
 
 ## Video İçerikleri
 
