@@ -5,9 +5,11 @@ Bu doküman içerisinde Conan'a yönelik faydalı olan içerikler bir araya geti
 
 Resmi eğitim içeriği için [Conan 2 Essentials](https://academy.jfrog.com/conan-2-essentials?utm_source=Conan+Docs)'a göz atabilirsiniz.
 
+Artifactory Management eğitim içeriği için [Artifact Management With JFrog Artifactory](https://www.youtube.com/watch?v=bKp1Vif9oO4)'a göz atabilirsiniz.
+
 ## Video İçerikleri
 
-**[Video İçerikleri için videos.md dosyasına göz atın.](videos.md)**
+**[Video İçerikleri için videos.md dosyasına göz atın.](doc/videos.md)**
 
 ## Kurulum
 Conan 2 ve bağımlılıklarının kurulumu için aşağıdaki adımları izleyebilirsiniz:
