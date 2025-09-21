@@ -1,0 +1,16 @@
+[settings]
+os=VxWorks
+arch=x86_64
+compiler=clang
+compiler.version=14
+compiler.libcxx=libstdc++
+build_type=Release
+
+[conf]
+tools.build:compiler_executables={"c": "/path/to/wrs/clang", "cpp": "/path/to/wrs/clang++"}
+tools.build:cxxflags=["--target=x86_64-wrs-vxworks", "-O2"]
+tools.build:sysroot="/path/to/vsb"
+tools.build:defines=["_VX_CPU=X86_64","_WRS_KERNEL"]
+
+[options]
+*:shared=False
